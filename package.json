@@ -35,7 +35,8 @@
     "build": "npm run clear && tsc",
     "test": "npm run build && mocha -r ts-node/register tests/**/*.test.ts",
     "prepublish": "npm test",
-    "dist": "npm run prepublish && npm publish"
+    "dist": "npm run prepublish && npm publish",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@types/es6-promise": "0.0.32",
